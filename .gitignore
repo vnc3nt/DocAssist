@@ -1,5 +1,8 @@
-.venv
-legal
-lib
-bin
-src.zip
+/.venv/
+/legal/
+/lib/
+/bin/
+/src.zip/
+.idea
+.vscode
+*.log
