@@ -2,7 +2,7 @@
 /legal/
 /lib/
 /bin/
-/src.zip/
+src.zip
 .idea
 .vscode
 *.log
