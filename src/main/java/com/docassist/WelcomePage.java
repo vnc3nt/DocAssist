@@ -1,6 +1,8 @@
+package com.docassist;
 import java.io.File;
 
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
@@ -9,7 +11,7 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.io.File;
+
 
 public class WelcomePage extends Page {
 
@@ -17,6 +19,13 @@ public class WelcomePage extends Page {
     
     public WelcomePage(Stage primaryStage) {
         this.primaryStage = primaryStage;
+
+        Scene welcomeScene = new Scene(this, 720, 480);
+        primaryStage.setScene(welcomeScene) ;
+        primaryStage.setTitle("DocAssist");
+        primaryStage.show();
+        this.setStyle("-fx-padding: 30; -fx-font-family: 'Arial'; -fx-font-size: 16");
+
 
         Text title = new Text("Willkommen bei DocAssist");
         title.setFont(Font.font("Arial", FontWeight.BOLD, 22));
@@ -66,11 +75,11 @@ public class WelcomePage extends Page {
     }
 
     private void openDoc(File file) {
-
+        new EditPage(primaryStage, file);
     }
 
     private void openNewFile() {
-        File newFile = new File(null);
+        File newFile = new File("newFile");
         openDoc(newFile);
     }
 
