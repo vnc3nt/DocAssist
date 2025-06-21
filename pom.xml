@@ -32,7 +32,21 @@
             <artifactId>pdfbox</artifactId>
             <version>3.0.5</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>${javafx.version}</version> 
+        </dependency>
     </dependencies>
+
+    
 
     <build>
         <plugins>
