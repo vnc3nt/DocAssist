@@ -30,7 +30,7 @@ public class EditPage extends Page{
     public EditPage(Stage primaryStage, File file) {
         this.primaryStage = primaryStage;
 
-        this.setStyle("-fx-padding: 30; -fx-font-family: 'Arial'; -fx-font-size: 16");
+        this.setStyle("-fx-font-family: 'Arial'; -fx-font-size: 16");
 
         processFile(file);
 
@@ -39,7 +39,7 @@ public class EditPage extends Page{
         primaryStage.setTitle("DocAssist - " + file.getName());
         primaryStage.show();
         
-
+        this.setTop(new HorizontalToolbar());
     }
 
      /**
