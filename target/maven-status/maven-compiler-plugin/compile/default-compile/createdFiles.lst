@@ -1,0 +1,5 @@
+com/docassist/view/WelcomePage.class
+com/docassist/controller/EditController.class
+com/docassist/controller/WelcomeController.class
+com/docassist/view/EditPage.class
+com/docassist/app.class
